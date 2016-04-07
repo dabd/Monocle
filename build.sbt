@@ -46,7 +46,7 @@ lazy val macroVersion = "2.1.0"
 lazy val paradisePlugin = compilerPlugin("org.scalamacros" %  "paradise"       % macroVersion cross CrossVersion.full)
 
 def mimaSettings(module: String): Seq[Setting[_]] = mimaDefaultSettings ++ Seq(
-  previousArtifact := Some("com.github.julien-truffaut" %  (s"monocle-${module}_2.11") % "1.1.0")
+  previousArtifact := Some("com.github.julien-truffaut" %  (s"monocle-${module}_2.11") % "1.2.0")
 )
 
 lazy val tagName = Def.setting(
